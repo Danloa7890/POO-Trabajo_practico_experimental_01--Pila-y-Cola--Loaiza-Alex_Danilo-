@@ -1,0 +1,33 @@
+@startuml Diagrama_Clases_Pila_Cola
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+
+class Pila {
+    - _elementos : list
+    --
+    + push(elemento: Object) : None
+    + pop() : Object
+    + top() : Object
+    + isEmpty() : bool
+    + size() : int
+    + reverse() : Pila
+    + pushAll(otraPila: Pila) : None
+}
+
+class Cola {
+    - _elementos : list
+    --
+    + push(elemento: Object) : None
+    + pop() : Object
+    + top() : Object
+    + isEmpty() : bool
+    + size() : int
+    + reverse() : Cola
+    + pushAll(otraCola: Cola) : None
+}
+
+Pila ..> Pila : usa
+Cola ..> Cola : usa
+
+@enduml
