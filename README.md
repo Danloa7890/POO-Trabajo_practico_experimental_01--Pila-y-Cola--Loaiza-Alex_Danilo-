@@ -61,3 +61,12 @@ Modela una fila de atención bancaria usando `Cola`, con las clases:
 - `Persona`: asigna turno automático correlativo al crear cada instancia.
 - `CajaBanco`: agrega personas, atiende en orden FIFO y permite retiro por nombre con `persona_abandona(nombre)`.
 
+## 📦 Dependencias
+
+Este proyecto utiliza la librería **Faker** para generar datos aleatorios en las pruebas. Para instalarla:
+
+```bash
+pip install faker
+```
+
+Se usó con localización en español (`es_ES`) para generar nombres de clientes de forma automática durante la simulación.
